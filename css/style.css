@@ -13,6 +13,8 @@
 
 ul li{
     list-style: none;
+    line-height: 28px;
+    font-size: 20px;
 }
 
 button{

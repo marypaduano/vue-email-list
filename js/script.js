@@ -6,12 +6,11 @@ createApp({
 	data() {
 		return {
 			mailList: [],
-            currentIndex: 1
 		}
 	},
 
 methods: {
-    fetchName() {
+    fetchMail() {
         axios
             .get('https://flynn.boolean.careers/exercises/api/random/mail')
             .then((res) => {
@@ -20,8 +19,8 @@ methods: {
     },
 },
 mounted() {
-    for (let i = 1; i <= 10; i++) {
-        this.fetchName()
+    for (let i = 0; i < 10; i++) {
+        this.fetchMail()
     }
 },
 }).mount('#app')
